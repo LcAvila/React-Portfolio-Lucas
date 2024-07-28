@@ -17,7 +17,7 @@ export const PROJECTS = [
     image: project1,
     description:
       "Um site de comércio eletrônico totalmente funcional com recursos como lista de produtos, carrinho de compras e autenticação de usuário.",
-    technologies: ["HTML", "CSS", "JavaScript", "Java", "MySql"],
+    technologies: ["HTML", "CSS", "JavaScript", "Java"],
     botao: ["Link do Repositório"],
   },
   {
