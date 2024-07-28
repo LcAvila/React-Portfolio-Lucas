@@ -3,7 +3,7 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `Olá, me chamo Lucas, tenho 24 anos, e sou apaixonado por tecnologia.
+export const HERO_CONTENT = `Olá, me chamo Lucas, tenho 25 anos, e sou apaixonado por tecnologia.
 Minha paixão pelo universo digital me levou a escolher uma carreira na área de programação, estou sempre em constante busca por conhecimento.
 Com determinação, eu trilho meu caminho em direção a uma carreira promissora na programação, onde minha dedicação promete resultados.`;
 
