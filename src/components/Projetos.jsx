@@ -1,6 +1,7 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
+
 const Projetos = () => {
     return (
         <div className="border-b border-neutral-900 pb-24">
@@ -12,35 +13,40 @@ const Projetos = () => {
                 Projetos
             </motion.h2>
             <div>{PROJECTS.map((project, index) => (
-                <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+                <div key={index} className="mb-10 flex flex-wrap lg:justify-center">
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
                         initial={{ opacity: 0, x: -100 }}
                         transition={{ duration: 1 }}
                         className="w-full lg:w-1/4">
                         <img src={project.image}
-                            width={150}
-                            height={150}
+                            width={250}
+                            height={250}
                             alt={project.title}
-                            className="mb-6 rounded" />
+                            className="mb-8 rounded-2xl border-2 border-neutral-800 p-2" />
+
                     </motion.div>
+                    
 
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
                         initial={{ opacity: 0, x: 100 }}
                         transition={{ duration: 1 }}
                         className="w-full max-w-xl lg:w-3/4">
-                        <h6 className="mb-2 font-semibold">{project.title}</h6>
+                        <h6 className="text-2xl mb-4 font-semibold">{project.title}</h6>
+
+                        <a href="https://github.com/LcAvila/siteC" target="blank">
+                            <motion.button
+                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, x: 100 }}
+                                transition={{ duration: 1.5 }}
+                                className="mt-4 mb-6 hover:text-cyan-400 text-sm font-bold">
+                                {project.botao1} 
+                            </motion.button></a>
+
                         <p className="mb-4 font-neutral-400">{project.description}</p>
-                        <a href="https://github.com/LcAvila/siteC" target="blank"><motion.h6
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ opacity: 0, x: 100 }}
-                            transition={{ duration: 1.5 }}
-                            className="my-5 text-center font-bold text-purple-600">
-                            {project.botao}
-                        </motion.h6></a>
                         {project.technologies.map((tech, index) => (
-                            <span key={index} className="mr-4 rounded bg-neutral-900 px-5 py-1 text-sm font-medium text-purple-800">
+                            <span key={index} className="mr-4 rounded bg-neutral-900 px-5 py-1 text-sm font-medium text-write">
                                 {tech}
                             </span>
                         ))}
@@ -48,8 +54,7 @@ const Projetos = () => {
                     </motion.div>
 
                 </div>
-
-            ))}
+    ))}
             </div>
         </div>
     );

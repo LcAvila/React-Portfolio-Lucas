@@ -5,7 +5,8 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
-import { animate, motion } from "framer-motion";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 
 const iconVariants = (duration) => ({
@@ -42,6 +43,14 @@ const Tecnologias = () => {
         </motion.div>
 
         <motion.div
+        variants={iconVariants(2.5)}
+        initial="initial"
+        animate="animate"
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <RiTailwindCssFill className="text-7xl text-cyan-600" />
+        </motion.div>
+
+        <motion.div
         variants={iconVariants(3)}
         initial="initial"
         animate="animate"
@@ -49,13 +58,6 @@ const Tecnologias = () => {
             <FaNode className="text-7xl text-green-500" />
         </motion.div>
 
-        <motion.div
-        variants={iconVariants(5)}
-        initial="initial"
-        animate="animate"
-        className="rounded-2xl border-4 border-neutral-800 p-4">
-            <IoLogoJavascript className="text-7xl text-yellow-400" />
-        </motion.div>
 
         <motion.div
         variants={iconVariants(2)}
@@ -70,7 +72,15 @@ const Tecnologias = () => {
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaCss3Alt className="text-7xl text-blue-500" />
+            <FaCss3Alt className="text-7xl text-blue-400" />
+        </motion.div>
+
+        <motion.div
+        variants={iconVariants(5)}
+        initial="initial"
+        animate="animate"
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <IoLogoJavascript className="text-7xl text-yellow-400" />
         </motion.div>
 
         <motion.div
