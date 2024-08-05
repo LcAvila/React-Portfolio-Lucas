@@ -25,12 +25,13 @@ export const PROJECTS = [
     botao1: ["VER PROJETO NO GITHUB"],
   },
   {
-    title: "Projeto Em breve",
+    title: "Projeto Cardápio Online - Hamburgueria",
     image: project2,
     description:
-      "Projeto Em breve.",
-    technologies: ["Em breve"],
-    botao2: ["Link do Repositório"],
+      "Um site de cardápio online totalmente funcional com recursos como escolher produto, adicionar ao carrinho, autenticação de horário de funcionamento do estabelecimento e realização do pedido integrado com o whatsapp.",
+    technologies: ["HTML", "CSS", "TAILWINDCSS", "JAVASCRIPT"],
+    botao2: ["VER PROJETO NO GITHUB"],
+    website: ["VER PROJETO ONLINE"]
   },
   {
     title: "Projeto Em breve",

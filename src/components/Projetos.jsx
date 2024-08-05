@@ -44,6 +44,24 @@ const Projetos = () => {
                                 {project.botao1} 
                             </motion.button></a>
 
+                            <a href="https://github.com/LcAvila/Projeto-Cardapio" target="blank">
+                            <motion.button
+                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, x: 100 }}
+                                transition={{ duration: 1.5 }}
+                                className="mt-4 mb-6 hover:text-cyan-400 text-sm font-bold">
+                                {project.botao2} 
+                            </motion.button></a>
+
+                            <a href="https://cardapio-iota-two.vercel.app/" target="blank">
+                            <motion.button
+                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, x: 100 }}
+                                transition={{ duration: 1.5 }}
+                                className="mt-4 mb-6 ml-6 hover:text-red-500 text-sm font-bold">
+                                {project.website} 
+                            </motion.button></a>
+
                         <p className="mb-4 font-neutral-400">{project.description}</p>
                         {project.technologies.map((tech, index) => (
                             <span key={index} className="mr-4 rounded bg-neutral-900 px-5 py-1 text-sm font-medium text-write">
@@ -52,6 +70,8 @@ const Projetos = () => {
                         ))}
 
                     </motion.div>
+
+                    
 
                 </div>
     ))}
