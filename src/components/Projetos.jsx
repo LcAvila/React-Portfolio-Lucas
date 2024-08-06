@@ -13,7 +13,7 @@ const Projetos = () => {
                 Projetos
             </motion.h2>
             <div>{PROJECTS.map((project, index) => (
-                <div key={index} className="mb-10 flex flex-wrap lg:justify-center">
+                <div key={index} className="sm:space-x-4 mb-10 flex flex-wrap lg:justify-center">
                     <motion.div
                         whileInView={{ opacity: 1, x: 0 }}
                         initial={{ opacity: 0, x: -100 }}
@@ -49,7 +49,7 @@ const Projetos = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 initial={{ opacity: 0, x: 100 }}
                                 transition={{ duration: 1.5 }}
-                                className="mt-4 mb-6 hover:text-cyan-400 text-sm font-bold">
+                                className="mt-4 mb-6 mr-6 hover:text-cyan-400 text-sm font-bold">
                                 {project.botao2} 
                             </motion.button></a>
 
@@ -58,17 +58,18 @@ const Projetos = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 initial={{ opacity: 0, x: 100 }}
                                 transition={{ duration: 1.5 }}
-                                className="mt-4 mb-6 ml-6 hover:text-red-500 text-sm font-bold">
+                                className="mt-4 mb-6 hover:text-red-500 text-sm font-bold">
                                 {project.website} 
                             </motion.button></a>
 
-                        <p className="mb-4 font-neutral-400">{project.description}</p>
+                
+                        <p className="mb-6 font-neutral-400">{project.description}</p>
                         {project.technologies.map((tech, index) => (
-                            <span key={index} className="mr-4 rounded bg-neutral-900 px-5 py-1 text-sm font-medium text-write">
+                            <span key={index} className="rounded-3xl p-2 mr-2 py-1 bg-neutral-900 text-sm text-write">
                                 {tech}
                             </span>
                         ))}
-
+                    
                     </motion.div>
 
                     

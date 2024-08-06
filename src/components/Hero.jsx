@@ -53,6 +53,30 @@ const Hero = () => {
                         className="my-2 max-xl py-6 font-light tracking-tight">
                         {HERO_CONTENT}
                     </motion.p>
+                    
+                    <motion.a 
+                    variants={container(1.5)}
+                    initial="hidden"
+                    animate="visible"
+
+                    href="src/curriculo/Curriculo Lucas Ávila.pdf" download>
+                         <button class="relative mt-6 group overflow-hidden mb-8 pl-6 h-14 flex space-x-6 items-center rounded-3xl bg-violet-800">
+                        <span class="relative uppercase text-base text-white">Baixar Curriculo</span>
+                        <div aria-hidden="true" class="w-14 bg-violet-900 transition duration-300 -translate-y-7 group-hover:translate-y-7">
+                        <div class="h-14 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto fill-white " viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        <div class="h-14 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto fill-white" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                        </div>
+                        </div>
+                        </button>
+                    </motion.a>
+                    
                 </div>
             </div>
             <div className="w-full lg:w-1/2 lg:p-6">

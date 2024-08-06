@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
+
 const Navbar = () => {
     return (
 
@@ -15,6 +16,7 @@ const Navbar = () => {
                 <a href="https://github.com/LcAvila" target="_blank" className="hover:text-gray-50"><FaGithub /></a>
                 <a href="https://www.instagram.com/luc.avila_?igsh=cDh1YWRpOTcxdjk5&utm_source=qr" target="_blank" className="hover:text-pink-800"><FaInstagram /></a>
             </div>
+
         </nav>
     );
 };
