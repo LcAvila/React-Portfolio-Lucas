@@ -8,10 +8,9 @@ export const HERO_CONTENT = `Olá, me chamo Lucas, tenho 25 anos, e sou apaixona
 Minha paixão pelo universo digital me levou a escolher uma carreira na área de programação, estou sempre em constante busca por conhecimento.
 Com determinação, eu trilho meu caminho em direção a uma carreira promissora na programação, onde minha dedicação promete resultados.`;
 
-export const ABOUT_TEXT = `Sou estudante de programação, atualemte faço faculdade de Análise e Desenvolvimento de Sistemas (ADS), com conhecimento proveitoso em front-end. 
+export const ABOUT_TEXT = `Sou estudante de programação, atualmente faço faculdade de Análise e Desenvolvimento de Sistemas (ADS), com conhecimento proveitoso em front-end. 
 Dediquei meus estudos a aprender ferramentas como React, Node.js, TailwindCSS, MySQL, Html, Css, JavaScript e JAVA. 
-Minha jornada no desenvolvimento web começou com uma profunda curiosidade sobre como as coisas funcionam e evoluiu para uma jornada onde me esforço continuamente para 
-aprender e me adaptar a novos desafios.`;
+Minha paixão no desenvolvimento web começou com uma curiosidade sobre como as coisas funcionam e isso me fez querer sempre aprender mais.`;
 
 
 
